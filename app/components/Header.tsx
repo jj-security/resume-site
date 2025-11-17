@@ -19,7 +19,7 @@ export default function Header() {
           <Link href="/#about" className="hover:text-primary transition">About</Link>
           <Link href="/#experience" className="hover:text-primary transition">Experience</Link>
           <Link href="/#skills" className="hover:text-primary transition">Skills</Link>
-          <Link href="/#projects" className="hover:text-primary transition">Projects</Link>
+          {/* <Link href="/#projects" className="hover:text-primary transition">Projects</Link> */}
           <Link href="/#contact" className="hover:text-primary transition">Contact</Link>
           <Link href="/reading_list" className="hover:text-primary transition">Reading List</Link>
         </nav>
@@ -41,7 +41,7 @@ export default function Header() {
           <Link href="/#about" className="block hover:text-primary">About</Link>
           <Link href="/#experience" className="block hover:text-primary">Experience</Link>
           <Link href="/#skills" className="block hover:text-primary">Skills</Link>
-          <Link href="/#projects" className="block hover:text-primary">Projects</Link>
+          {/* <Link href="/#projects" className="block hover:text-primary">Projects</Link> */}
           <Link href="/#contact" className="block hover:text-primary">Contact</Link>
           <Link href="/reading_list" className="block hover:text-primary">Reading List</Link>
         </div>
