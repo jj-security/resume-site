@@ -11,17 +11,17 @@ export default function Header() {
         
         {/* Logo / Name */}
         <Link href="/" className="text-xl font-semibold text-primary hover:text-primary-light transition">
-          contact@justsecure.org
+          julian@justsecure.org
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 text-foreground">
-          <Link href="#about" className="hover:text-primary transition">About</Link>
-          <Link href="#experience" className="hover:text-primary transition">Experience</Link>
-          <Link href="#skills" className="hover:text-primary transition">Skills</Link>
-          <Link href="#projects" className="hover:text-primary transition">Projects</Link>
-          <Link href="#contact" className="hover:text-primary transition">Contact</Link>
-          <Link href="#reading-list" className="hover:text-primary transition">Reading List</Link>
+          <Link href="/#about" className="hover:text-primary transition">About</Link>
+          <Link href="/#experience" className="hover:text-primary transition">Experience</Link>
+          <Link href="/#skills" className="hover:text-primary transition">Skills</Link>
+          <Link href="/#projects" className="hover:text-primary transition">Projects</Link>
+          <Link href="/#contact" className="hover:text-primary transition">Contact</Link>
+          <Link href="/reading_list" className="hover:text-primary transition">Reading List</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -38,12 +38,12 @@ export default function Header() {
       {/* Mobile Menu Drawer */}
       {open && (
         <div className="md:hidden bg-background border-t border-border px-6 py-4 space-y-4">
-          <Link href="#about" className="block hover:text-primary">About</Link>
-          <Link href="#experience" className="block hover:text-primary">Experience</Link>
-          <Link href="#skills" className="block hover:text-primary">Skills</Link>
-          <Link href="#projects" className="block hover:text-primary">Projects</Link>
-          <Link href="#contact" className="block hover:text-primary">Contact</Link>
-          <Link href="#contact" className="block hover:text-primary">Reading List</Link>
+          <Link href="/#about" className="block hover:text-primary">About</Link>
+          <Link href="/#experience" className="block hover:text-primary">Experience</Link>
+          <Link href="/#skills" className="block hover:text-primary">Skills</Link>
+          <Link href="/#projects" className="block hover:text-primary">Projects</Link>
+          <Link href="/#contact" className="block hover:text-primary">Contact</Link>
+          <Link href="/reading_list" className="block hover:text-primary">Reading List</Link>
         </div>
       )}
     </header>
