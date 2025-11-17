@@ -104,17 +104,17 @@ export default function Home() {
         </section>
 
         {/* ============================= */}
-        {/* EXPERIENCE (modern spacing)   */}
+        {/* EXPERIENCE SECTION            */}
         {/* ============================= */}
-        <section id="experience" className="py-24 bg-background border-b border-border">
-          <div className="container mx-auto px-6 max-w-6xl">
+        <section id="experience" className="py-20 bg-background border-b border-border">
+          <div className="container mx-auto px-6 max-w-5xl">
             
-            <h2 className="text-4xl font-bold text-primary mb-14">Experience</h2>
+            <h2 className="text-3xl font-bold text-primary mb-10">Experience</h2>
 
-            <div className="space-y-10">
-
+            <div className="space-y-8">
               {/* Job 1 */}
-              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
+
+              <div className="bg-panel border border-border p-6 rounded-lg">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Security Analyst III
@@ -122,7 +122,8 @@ export default function Home() {
                   <span className="text-muted">2021 – Present</span>
                 </div>
                 <p className="text-primary mb-2">InComm Payments • Atlanta, Georgia</p>
-                <ul className="space-y-2 text-muted text-sm">
+
+                <ul className="space-y-2 text-muted">
                   <li>• Managed vulnerability scanning (Qualys, Wiz).</li>
                   <li>• Automated SLAs, dashboards, and visibility tools. (Dazz, Nucleus)</li>
                   <li>• Supported DevOps/Infra with secure remediation.</li>
@@ -130,7 +131,8 @@ export default function Home() {
               </div>
 
               {/* Job 2 */}
-              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
+
+              <div className="bg-panel border border-border p-6 rounded-lg">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Application Engineer
@@ -138,7 +140,8 @@ export default function Home() {
                   <span className="text-muted">2020 – 2021</span>
                 </div>
                 <p className="text-primary mb-2"> Cincinnati Bell Technology Solutions • Cincinnati, Ohio</p>
-                <ul className="space-y-2 text-muted text-sm">
+
+                <ul className="space-y-2 text-muted">
                   <li>• Built and configured McAfee ePolicy Orchestrator server for disaster recovery and testing environments.</li>
                   <li>• </li>
                   <li>• Supported DevOps/Infra with secure remediation.</li>
@@ -146,7 +149,8 @@ export default function Home() {
               </div>
 
               {/* Job 3 */}
-              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
+
+              <div className="bg-panel border border-border p-6 rounded-lg">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Supervisor, Weapons and Tactics
@@ -154,15 +158,17 @@ export default function Home() {
                   <span className="text-muted">2018 – 2020</span>
                 </div>
                 <p className="text-primary mb-2"> United States Air Force • Honolulu, Hawaii</p>
-                <ul className="space-y-2 text-muted text-sm">
+
+                <ul className="space-y-2 text-muted">
                   <li>• In charge of planning and execution of all SOC operations.</li>
                   <li>• Distributed all-source intelligence and modeled threats.</li>
-                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF)...</li>
+                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF). Included all adversarial and friendly tactics, techniques, and procedures. Trained defenders to use them effectively. Recognized by the 24th Air Force Command for my efforts.</li>
                 </ul>
               </div>
 
               {/* Job 4 */}
-              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
+
+              <div className="bg-panel border border-border p-6 rounded-lg">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Endpoint Protection Specialist
@@ -170,15 +176,17 @@ export default function Home() {
                   <span className="text-muted">2016 – 2018</span>
                 </div>
                 <p className="text-primary mb-2"> United States Air Force • Honolulu, Hawaii</p>
-                <ul className="space-y-2 text-muted text-sm">
+
+                <ul className="space-y-2 text-muted">
                   <li>• In charge of planning and execution of all SOC operations.</li>
                   <li>• Distributed all-source intelligence and modeled threats.</li>
-                  <li>• Launched "Cyber Defender Playbooks"...</li>
+                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF). Included all adversarial and friendly tactics, techniques, and procedures. Trained defenders to use them effectively. Recognized by the 24th Air Force Command for my efforts.</li>
                 </ul>
               </div>
 
               {/* Job 5 */}
-              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
+
+              <div className="bg-panel border border-border p-6 rounded-lg">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Systems Administrator/Vulnerability Management Technician
@@ -186,14 +194,17 @@ export default function Home() {
                   <span className="text-muted">2014 – 2016</span>
                 </div>
                 <p className="text-primary mb-2"> United States Air Force • Yigo, Guam</p>
-                <ul className="space-y-2 text-muted text-sm">
-                  <li>• Protected critical infrastrucure during Category 5 typhoon...</li>
-                  <li>• Maintained cool server temps and kept them online for 48 hours...</li>
+
+                <ul className="space-y-2 text-muted">
+                  <li>• Protected critical infrastrucure during Category 5 typhoon. Redirected subfloor flooding back outside, and fixed failing HVAC systems. Prevented datacenter outage, electrical disasters, and kept bombing operations online with zero downtime.</li>
+                  <li>• Maintained cool server temps and kept them online for 48 hours during total HVAC/UPS outage while awaiting replacement parts. Gathered every fan from across the base, and configured them for max airflow and positive pressure. Created security checkpoint with defensive posture to protect critical infrastructure.</li>
                   <li>• Automated client health using PowerShell scripts at logon.</li>
-                  <li>• Enhanced scanning, patching, and Active Directory administration...</li>
-                  <li>• Maintained offsite backup storage of classified data...</li>
+                  <li>• Enhanced scanning, patching, and Active Directory administration using scripts. Passing cyber readiness inspection (DISA CCRI) with 95% compliance rating.</li>
+                  <li>• Maintained offsite backup storage of classified data in accordance with our data retention and disaster recovery plans. </li>
                 </ul>
               </div>
+
+              {/* More jobs as needed... */}
 
             </div>
           </div>
