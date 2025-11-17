@@ -11,7 +11,7 @@ export default function Header() {
         
         {/* Logo / Name */}
         <Link href="/" className="text-xl font-semibold text-primary hover:text-primary-light transition">
-          julian@justsecure.org
+          contact@justsecure.org
         </Link>
 
         {/* Desktop Nav */}

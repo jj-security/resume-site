@@ -58,10 +58,10 @@ export default function Home() {
                   <li>
                     <span className="font-medium text-foreground">Email:</span>{" "}
                     <a 
-                      href="mailto:julian@justsecure.org"
+                      href="mailto:contact@justsecure.org"
                       className="text-primary hover:text-primary-light underline"
                     >
-                      julian@justsecure.org
+                      contact@justsecure.org
                     </a>
                   </li>
                   <li>
@@ -284,7 +284,7 @@ export default function Home() {
               </p>
 
               <a
-                href="mailto:julian@justsecure.org"
+                href="mailto:contact@justsecure.org"
                 className="inline-block bg-primary hover:bg-primary-dark text-foreground px-6 py-3 rounded transition"
               >
                 Contact Me
