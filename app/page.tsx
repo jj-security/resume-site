@@ -4,26 +4,25 @@ import Footer from "./components/Footer"
 export default function Home() {
   return (
     <>
-
       <main className="bg-background">
 
         {/* ============================= */}
-        {/* HERO SECTION                  */}
+        {/* HERO (modernized styling only) */}
         {/* ============================= */}
-        <section 
+        <section
           id="hero"
-          className="h-[500px] flex items-center justify-center bg-background border-b border-border"
+          className="min-h-[600px] flex items-center justify-center bg-gradient-to-b from-panel/40 to-background border-b border-border"
         >
           <div className="text-center max-w-4xl mx-auto px-6">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 text-foreground">
+            <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight mb-4 text-foreground">
               <span className="text-primary">Julian Johnson</span>
             </h1>
 
-            <p className="text-xl text-muted mb-6">
+            <p className="text-xl md:text-2xl text-muted mb-6">
               Security Analyst
             </p>
 
-            <p className="max-w-xl mx-auto text-muted leading-relaxed">
+            <p className="max-w-xl mx-auto text-muted leading-relaxed text-lg">
               Practical, technical, and automation-driven security professional focused on 
               vulnerability management, hardening, endpoint protection, and hands-on defense 
               in hybrid environments.
@@ -32,19 +31,19 @@ export default function Home() {
         </section>
 
         {/* ============================= */}
-        {/* ABOUT SECTION                 */}
+        {/* ABOUT SECTION (modern cards)  */}
         {/* ============================= */}
-        <section id="about" className="py-20 bg-panel border-b border-border">
-          <div className="container mx-auto px-6 max-w-5xl">
+        <section id="about" className="py-24 bg-panel border-b border-border">
+          <div className="container mx-auto px-6 max-w-6xl">
 
-            <h2 className="text-3xl font-bold text-primary mb-10">About Me</h2>
+            <h2 className="text-4xl font-bold text-primary mb-14">About Me</h2>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
               {/* Summary */}
-              <div className="bg-background border border-border p-6 rounded-lg">
+              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-primary font-semibold mb-3 text-lg">Summary</h3>
-                <p className="text-muted leading-relaxed">
+                <p className="text-muted leading-relaxed text-sm">
                   Cybersecurity analyst with experience in vulnerability management, network 
                   security, scripting, and automation. Skilled in Qualys, Nessus, Python, Bash, 
                   and secure infrastructure practices.
@@ -52,9 +51,9 @@ export default function Home() {
               </div>
 
               {/* Contact */}
-              <div className="bg-background border border-border p-6 rounded-lg">
+              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-primary font-semibold mb-3 text-lg">Contact</h3>
-                <ul className="space-y-2 text-muted">
+                <ul className="space-y-2 text-muted text-sm">
                   <li>
                     <span className="font-medium text-foreground">Email:</span>{" "}
                     <a 
@@ -82,31 +81,40 @@ export default function Home() {
               </div>
 
               {/* Certifications */}
-              <div className="bg-background border border-border p-6 rounded-lg">
+              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-primary font-semibold mb-3 text-lg">Certifications</h3>
-
-                <ul className="list-disc list-inside space-y-2 text-muted">
+                <ul className="list-disc list-inside space-y-2 text-muted text-sm">
                   <li>GIAC Certified Enterprise Defender (GCED)</li>
                   <li>GIAC Web Application Penetration Tester (GWAPT)</li>
                   <li>A+, Security+, Project+</li>
                 </ul>
               </div>
+
+              {/* Education */}
+              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
+                <h3 className="text-primary font-semibold mb-3 text-lg">Education</h3>
+                <ul className="list-disc list-inside space-y-2 text-muted text-sm">
+                  <li>B.S. Software Development, Western Governors University</li>
+                  <li>A.A.S Information Technology, Community College of the Air Force</li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </section>
 
         {/* ============================= */}
-        {/* EXPERIENCE SECTION            */}
+        {/* EXPERIENCE (modern spacing)   */}
         {/* ============================= */}
-        <section id="experience" className="py-20 bg-background border-b border-border">
-          <div className="container mx-auto px-6 max-w-5xl">
+        <section id="experience" className="py-24 bg-background border-b border-border">
+          <div className="container mx-auto px-6 max-w-6xl">
             
-            <h2 className="text-3xl font-bold text-primary mb-10">Experience</h2>
+            <h2 className="text-4xl font-bold text-primary mb-14">Experience</h2>
 
-            <div className="space-y-8">
+            <div className="space-y-10">
+
               {/* Job 1 */}
-
-              <div className="bg-panel border border-border p-6 rounded-lg">
+              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Security Analyst III
@@ -114,8 +122,7 @@ export default function Home() {
                   <span className="text-muted">2021 – Present</span>
                 </div>
                 <p className="text-primary mb-2">InComm Payments • Atlanta, Georgia</p>
-
-                <ul className="space-y-2 text-muted">
+                <ul className="space-y-2 text-muted text-sm">
                   <li>• Managed vulnerability scanning (Qualys, Wiz).</li>
                   <li>• Automated SLAs, dashboards, and visibility tools. (Dazz, Nucleus)</li>
                   <li>• Supported DevOps/Infra with secure remediation.</li>
@@ -123,8 +130,7 @@ export default function Home() {
               </div>
 
               {/* Job 2 */}
-
-              <div className="bg-panel border border-border p-6 rounded-lg">
+              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Application Engineer
@@ -132,8 +138,7 @@ export default function Home() {
                   <span className="text-muted">2020 – 2021</span>
                 </div>
                 <p className="text-primary mb-2"> Cincinnati Bell Technology Solutions • Cincinnati, Ohio</p>
-
-                <ul className="space-y-2 text-muted">
+                <ul className="space-y-2 text-muted text-sm">
                   <li>• Built and configured McAfee ePolicy Orchestrator server for disaster recovery and testing environments.</li>
                   <li>• </li>
                   <li>• Supported DevOps/Infra with secure remediation.</li>
@@ -141,8 +146,7 @@ export default function Home() {
               </div>
 
               {/* Job 3 */}
-
-              <div className="bg-panel border border-border p-6 rounded-lg">
+              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Supervisor, Weapons and Tactics
@@ -150,17 +154,15 @@ export default function Home() {
                   <span className="text-muted">2018 – 2020</span>
                 </div>
                 <p className="text-primary mb-2"> United States Air Force • Honolulu, Hawaii</p>
-
-                <ul className="space-y-2 text-muted">
+                <ul className="space-y-2 text-muted text-sm">
                   <li>• In charge of planning and execution of all SOC operations.</li>
                   <li>• Distributed all-source intelligence and modeled threats.</li>
-                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF). Included all adversarial and friendly tactics, techniques, and procedures. Trained defenders to use them effectively. Recognized by the 24th Air Force Command for my efforts.</li>
+                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF)...</li>
                 </ul>
               </div>
 
               {/* Job 4 */}
-
-              <div className="bg-panel border border-border p-6 rounded-lg">
+              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Endpoint Protection Specialist
@@ -168,17 +170,15 @@ export default function Home() {
                   <span className="text-muted">2016 – 2018</span>
                 </div>
                 <p className="text-primary mb-2"> United States Air Force • Honolulu, Hawaii</p>
-
-                <ul className="space-y-2 text-muted">
+                <ul className="space-y-2 text-muted text-sm">
                   <li>• In charge of planning and execution of all SOC operations.</li>
                   <li>• Distributed all-source intelligence and modeled threats.</li>
-                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF). Included all adversarial and friendly tactics, techniques, and procedures. Trained defenders to use them effectively. Recognized by the 24th Air Force Command for my efforts.</li>
+                  <li>• Launched "Cyber Defender Playbooks"...</li>
                 </ul>
               </div>
 
               {/* Job 5 */}
-
-              <div className="bg-panel border border-border p-6 rounded-lg">
+              <div className="bg-panel border border-border p-8 rounded-2xl shadow-sm">
                 <div className="flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Systems Administrator/Vulnerability Management Technician
@@ -186,18 +186,14 @@ export default function Home() {
                   <span className="text-muted">2014 – 2016</span>
                 </div>
                 <p className="text-primary mb-2"> United States Air Force • Yigo, Guam</p>
-
-                <ul className="space-y-2 text-muted">
-                  <li>• Protected critical infrastrucure during Category 5 typhoon. Redirected subfloor flooding back outside, and fixed failing HVAC systems. Prevented datacenter outage, electrical disasters, and kept bombing operations online with zero downtime.</li>
-                  <li>• Maintained cool server temps and kept them online for 48 hours during total HVAC/UPS outage while awaiting replacement parts. Gathered every fan from across the base, and configured them for max airflow and positive pressure. Created security checkpoint with defensive posture to protect critical infrastructure.</li>
+                <ul className="space-y-2 text-muted text-sm">
+                  <li>• Protected critical infrastrucure during Category 5 typhoon...</li>
+                  <li>• Maintained cool server temps and kept them online for 48 hours...</li>
                   <li>• Automated client health using PowerShell scripts at logon.</li>
-                  <li>• Enhanced scanning, patching, and Active Directory administration using scripts. Passing cyber readiness inspection (DISA CCRI) with 95% compliance rating.</li>
-                  <li>• Maintained offsite backup storage of classified data in accordance with our data retention and disaster recovery plans. </li>
+                  <li>• Enhanced scanning, patching, and Active Directory administration...</li>
+                  <li>• Maintained offsite backup storage of classified data...</li>
                 </ul>
               </div>
-
-
-              {/* More jobs as needed... */}
 
             </div>
           </div>
@@ -206,28 +202,29 @@ export default function Home() {
         {/* ============================= */}
         {/* SKILLS SECTION                */}
         {/* ============================= */}
-        <section id="skills" className="py-20 bg-panel border-b border-border">
-          <div className="container mx-auto px-6 max-w-5xl">
-            <h2 className="text-3xl font-bold text-primary mb-10">Skills</h2>
+        <section id="skills" className="py-24 bg-panel border-b border-border">
+          <div className="container mx-auto px-6 max-w-6xl">
+
+            <h2 className="text-4xl font-bold text-primary mb-14">Skills</h2>
 
             <div className="grid md:grid-cols-3 gap-8">
 
-              <div className="bg-background border border-border p-6 rounded-lg">
+              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-primary mb-3 font-semibold">Security Tools + Languages</h3>
-                <ul className="text-muted space-y-2">
+                <ul className="text-muted space-y-2 text-sm">
                   <li>• Qualys, Nessus, Retina</li>
                   <li>• Wiz, Dazz, Nucleus</li>
                   <li>• SIEM/Log Analysis (Splunk, Exabeam, ELK)</li>
-                  <li>• Trellix ePolicy Orchestrator (f.k.a. McAfee) and suite of EDR products (HIPS, PA, VSE, Agent)</li>
+                  <li>• Trellix ePolicy Orchestrator...</li>
                   <li>• CommVault + ADIC Scalar</li>
                   <li>• Python, Bash, PowerShell</li>
                   <li>• Copilot, OpenAI</li>
                 </ul>
               </div>
 
-              <div className="bg-background border border-border p-6 rounded-lg">
+              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-primary mb-3 font-semibold">Infrastructure</h3>
-                <ul className="text-muted space-y-2">
+                <ul className="text-muted space-y-2 text-sm">
                   <li>• Linux (Ubuntu, RHEL, Kali)</li>
                   <li>• Windows Server</li>
                   <li>• Docker</li>
@@ -237,55 +234,55 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        
         {/* ============================= */}
         {/* PROJECTS SECTION              */}
         {/* ============================= */}
-        <section id="projects" className="py-20 bg-background border-b border-border">
-          <div className="container mx-auto px-6 max-w-5xl">
+        {/* <section id="projects" className="py-24 bg-background border-b border-border">
+          <div className="container mx-auto px-6 max-w-6xl">
 
-            <h2 className="text-3xl font-bold text-primary mb-10">Projects</h2>
+            <h2 className="text-4xl font-bold text-primary mb-14">Projects</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
 
-              <div className="bg-panel border border-border p-6 rounded-lg">
+              <div className="bg-panel border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-lg font-semibold text-foreground mb-2">
                   Vulnerability SLA Dashboard
                 </h3>
-                <p className="text-muted mb-3">
+                <p className="text-muted mb-3 text-sm">
                   Python-based reporting tool for SLA evaluation and visibility.
                 </p>
               </div>
 
-              <div className="bg-panel border border-border p-6 rounded-lg">
+              <div className="bg-panel border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-lg font-semibold text-foreground mb-2">
                   Network Hardening Lab
                 </h3>
-                <p className="text-muted mb-3">
+                <p className="text-muted mb-3 text-sm">
                   VLAN-segmented lab used to simulate production-style enterprise architectures.
                 </p>
               </div>
 
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ============================= */}
         {/* CONTACT SECTION               */}
         {/* ============================= */}
-        <section id="contact" className="py-20 bg-panel">
+        <section id="contact" className="py-24 bg-panel">
           <div className="container mx-auto px-6 max-w-4xl text-center">
 
-            <h2 className="text-3xl font-bold text-primary mb-10">Contact</h2>
+            <h2 className="text-4xl font-bold text-primary mb-10">Contact</h2>
 
-            <div className="bg-background border border-border p-8 rounded-lg max-w-xl mx-auto">
+            <div className="bg-background border border-border p-10 rounded-2xl shadow-sm max-w-xl mx-auto">
               <p className="text-muted mb-6">
                 Always open to opportunities or collaboration. Feel free to reach out.
               </p>
 
               <a
                 href="mailto:julian@justsecure.org"
-                className="inline-block bg-primary hover:bg-primary-dark text-foreground px-6 py-3 rounded transition"
+                className="inline-block bg-primary hover:bg-primary-dark text-foreground px-6 py-3 rounded-xl transition"
               >
                 Contact Me
               </a>
