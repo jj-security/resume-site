@@ -1,23 +1,65 @@
 @import "tailwindcss";
 
+/* ------------------------ */
+/* Base Theme (Red + Black) */
+/* ------------------------ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core palette */
+  --background: #0b0b0b;     /* Deep black */
+  --foreground: #f4f4f5;     /* Soft white-gray text */
+
+  --primary-red: #ff3b3b;    /* Strong red accent */
+  --primary-red-dark: #cc2f2f;
+  --primary-red-light: #ff6b6b;
+
+  --panel-bg: #111113;       /* Slightly lighter than page background */
+  --panel-border: #2a2a2d;   /* Dark slate border */
+
+  --subtle-text: #a1a1aa;    /* Muted gray */
 }
+
+/* ------------------------- */
+/* Tailwind Theme Integration */
+/* ------------------------- */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-primary: var(--primary-red);
+  --color-primary-dark: var(--primary-red-dark);
+  --color-primary-light: var(--primary-red-light);
+
+  --color-panel: var(--panel-bg);
+  --color-border: var(--panel-border);
+
+  --color-muted: var(--subtle-text);
 }
 
-@media (prefers-color-scheme: dark) {
+/* ---------------------- */
+/* Light Mode (Optional)  */
+/* ---------------------- */
+
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fafafa;
+    --foreground: #0b0b0b;
+
+    --panel-bg: #ffffff;
+    --panel-border: #d4d4d8;
+
+    --subtle-text: #52525b;
+
+    --primary-red: #e60000;
+    --primary-red-dark: #b30000;
+    --primary-red-light: #ff3333;
   }
 }
+
+/* ---------------------- */
+/* Global Body Styles     */
+/* ---------------------- */
 
 body {
   background: var(--background);
