@@ -1,4 +1,3 @@
-import Header from "./components/Header"
 import Footer from "./components/Footer"
 
 export default function Home() {
@@ -23,9 +22,7 @@ export default function Home() {
             </p>
 
             <p className="max-w-xl mx-auto text-muted leading-relaxed text-lg">
-              Practical, technical, and automation-driven security professional focused on 
-              vulnerability management, hardening, endpoint protection, and hands-on defense 
-              in hybrid environments.
+              Professional security analyst with experience in vulnerability management, automation, remediation coordination, and hardening of hybrid cloud and on-premise environments.
             </p>
           </div>
         </section>
@@ -38,22 +35,23 @@ export default function Home() {
 
             <h2 className="text-4xl font-bold text-primary mb-14">About Me</h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Modern 2×2 Grid */}
+            <div className="grid md:grid-cols-2 gap-10">
 
               {/* Summary */}
-              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
-                <h3 className="text-primary font-semibold mb-3 text-lg">Summary</h3>
-                <p className="text-muted leading-relaxed text-sm">
-                  Cybersecurity analyst with experience in vulnerability management, network 
-                  security, scripting, and automation. Skilled in Qualys, Nessus, Python, Bash, 
-                  and secure infrastructure practices.
+              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+                <h3 className="text-primary font-semibold mb-4 text-xl">Summary</h3>
+                <p className="text-muted leading-relaxed text-base">
+                  Cybersecurity analyst with experience in vulnerability management, 
+                  network security, automation, and scripting. Skilled in Qualys, Nessus, 
+                  Python, Bash, remediation coordination, and secure infrastructure practices.
                 </p>
               </div>
 
               {/* Contact */}
-              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
-                <h3 className="text-primary font-semibold mb-3 text-lg">Contact</h3>
-                <ul className="space-y-2 text-muted text-sm">
+              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+                <h3 className="text-primary font-semibold mb-4 text-xl">Contact</h3>
+                <ul className="space-y-3 text-muted text-base">
                   <li>
                     <span className="font-medium text-foreground">Email:</span>{" "}
                     <a 
@@ -81,21 +79,22 @@ export default function Home() {
               </div>
 
               {/* Certifications */}
-              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
-                <h3 className="text-primary font-semibold mb-3 text-lg">Certifications</h3>
-                <ul className="list-disc list-inside space-y-2 text-muted text-sm">
+              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+                <h3 className="text-primary font-semibold mb-4 text-xl">Certifications</h3>
+                <ul className="list-disc list-inside space-y-3 text-muted text-base">
                   <li>GIAC Certified Enterprise Defender (GCED)</li>
                   <li>GIAC Web Application Penetration Tester (GWAPT)</li>
-                  <li>A+, Security+, Project+</li>
+                  <li>CompTIA A+, Security+, Project+</li>
                 </ul>
               </div>
 
               {/* Education */}
-              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
-                <h3 className="text-primary font-semibold mb-3 text-lg">Education</h3>
-                <ul className="list-disc list-inside space-y-2 text-muted text-sm">
-                  <li>B.S. Software Development, Western Governors University</li>
-                  <li>A.A.S Information Technology, Community College of the Air Force</li>
+              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+                <h3 className="text-primary font-semibold mb-4 text-xl">Education</h3>
+                <ul className="list-disc list-inside space-y-3 text-muted text-base">
+                  <li>B.S. Software Development — Western Governors University</li>
+                  <li>A.A.S Information Technology — Community College of the Air Force</li>
+                  <li>Music Theory & Composition — Saddleback College / Irvine Valley College</li>
                 </ul>
               </div>
 
@@ -123,10 +122,17 @@ export default function Home() {
                 </div>
                 <p className="text-primary mb-2">InComm Payments • Atlanta, Georgia</p>
 
+                <p className="space-y-2">
+                  InComm Payments provides a broad range of financial services and payment solutions. Our Vulnerability Management team handles scanning and reporting for multiple merchants and compliance frameworks.
+                </p>
+                <br />
+
                 <ul className="space-y-2 text-muted">
-                  <li>• Managed vulnerability scanning (Qualys, Wiz).</li>
-                  <li>• Automated SLAs, dashboards, and visibility tools. (Dazz, Nucleus)</li>
-                  <li>• Supported DevOps/Infra with secure remediation.</li>
+                  <li>• Expand our vulnerability orchestration framework using third-party tools such as Dazz, Nucleus, and custom Python scripts.</li>
+                  <li>• Communicate emerging threats and zero-day vulnerabilities to stakeholders for immediate response.</li>
+                  <li>• Enable penetration test engagements by preparing attack systems, collaborating with testers, and translating results into clear remediation recommendations for clients.</li>
+                  <li>• Perform PCI-compliant network segmentation testing to validate that cardholder-data environments (CDE) remain fully isolated from non-trusted networks.</li>
+                  <li>• Assess and document PCI “significant changes,” ensuring that architectural updates, segmentation adjustments, and new systems are revalidated for compliance and security impact.</li>
                 </ul>
               </div>
 
@@ -142,9 +148,8 @@ export default function Home() {
                 <p className="text-primary mb-2"> Cincinnati Bell Technology Solutions • Cincinnati, Ohio</p>
 
                 <ul className="space-y-2 text-muted">
-                  <li>• Built and configured McAfee ePolicy Orchestrator server for disaster recovery and testing environments.</li>
-                  <li>• </li>
-                  <li>• Supported DevOps/Infra with secure remediation.</li>
+                  <li>• Built and configured McAfee ePolicy Orchestrator architecture for disaster recovery and testing environments.</li>
+                  <li>• Analyzed logs during exploitation testing. Created HIPS and DLP signatures to protect against failed attack vectors.</li>
                 </ul>
               </div>
 
@@ -160,9 +165,10 @@ export default function Home() {
                 <p className="text-primary mb-2"> United States Air Force • Honolulu, Hawaii</p>
 
                 <ul className="space-y-2 text-muted">
-                  <li>• In charge of planning and execution of all SOC operations.</li>
+                  <li>• In charge of planning and execution of all security operations assigned to the unit.</li>
                   <li>• Distributed all-source intelligence and modeled threats.</li>
-                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF). Included all adversarial and friendly tactics, techniques, and procedures. Trained defenders to use them effectively. Recognized by the 24th Air Force Command for my efforts.</li>
+                  <li>• Trained in the Air Force's PBED (Plan, Brief, Execute, Debrief) process, used for continuous improvement and mission planning.</li>
+                  <li>• Launched Cyber Defender Playbooks within PACAF, later used across broader Air Force cyber units. Documented adversarial and defensive TTPs and trained defenders in their application. Efforts were formally recognized by 24th Air Force.</li>
                 </ul>
               </div>
 
@@ -178,9 +184,8 @@ export default function Home() {
                 <p className="text-primary mb-2"> United States Air Force • Honolulu, Hawaii</p>
 
                 <ul className="space-y-2 text-muted">
-                  <li>• In charge of planning and execution of all SOC operations.</li>
-                  <li>• Distributed all-source intelligence and modeled threats.</li>
-                  <li>• Launched "Cyber Defender Playbooks" within the Air Force (PACAF). Included all adversarial and friendly tactics, techniques, and procedures. Trained defenders to use them effectively. Recognized by the 24th Air Force Command for my efforts.</li>
+                  <li>• McAfee (Trellix) ePolicy Orchestrator technician. Set up server architecture and managed all software products. </li>
+                  <li>• Created HIPS signatures, DLP rules, rogue system detection, whitelisted software. </li>
                 </ul>
               </div>
 
@@ -225,9 +230,9 @@ export default function Home() {
                 <ul className="text-muted space-y-2 text-sm">
                   <li>• Qualys, Nessus, Retina</li>
                   <li>• Wiz, Dazz, Nucleus</li>
-                  <li>• SIEM/Log Analysis (Splunk, Exabeam, ELK)</li>
-                  <li>• Trellix ePolicy Orchestrator...</li>
-                  <li>• CommVault + ADIC Scalar</li>
+                  <li>• SIEM/Log Analysis (Splunk, Exabeam)</li>
+                  <li>• Trellix ePolicy Orchestrator (f.k.a. McAfee)</li>
+                  <li>• CommVault, ADIC Scalar</li>
                   <li>• Python, Bash, PowerShell</li>
                   <li>• Copilot, OpenAI</li>
                 </ul>
