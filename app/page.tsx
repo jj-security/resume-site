@@ -108,7 +108,7 @@ export default function Home() {
         <section id="experience" className="py-20 bg-background border-b border-border">
           <div className="container mx-auto px-6 max-w-5xl">
             
-            <h2 className="text-3xl font-bold text-primary mb-10">Resume</h2>
+            <h2 className="text-3xl font-bold text-primary mb-10">Experience</h2>
 
             <div className="space-y-8">
               {/* Job 1 */}

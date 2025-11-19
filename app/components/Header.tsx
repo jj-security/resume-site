@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { useState } from "react"
-import { Github } from "lucide-react"    // ← add this
+import { Menu } from "lucide-react"
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -26,14 +26,15 @@ export default function Header() {
           <Link href="/#contact" className="hover:text-primary transition">Contact</Link>
           <Link href="/reading_list" className="hover:text-primary transition">Reading List</Link>
 
-          {/* GitHub Icon */}
-          <Link
-            href="https://github.com/jj-security"
+          {/* CTF Walkthroughs */}
+          <a
+            href="https://walkthroughs.justsecure.org"
             target="_blank"
-            className="hover:text-primary transition flex items-center"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition"
           >
-            <Github className="w-5 h-5" />
-          </Link>
+            CTF Walkthroughs
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -41,9 +42,7 @@ export default function Header() {
           onClick={() => setOpen(!open)}
           className="md:hidden text-foreground hover:text-primary transition"
         >
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 448 512">
-            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7..." />
-          </svg>
+          <Menu className="w-6 h-6" />
         </button>
       </div>
 
@@ -56,14 +55,15 @@ export default function Header() {
           <Link href="/#contact" className="block hover:text-primary">Contact</Link>
           <Link href="/reading_list" className="block hover:text-primary">Reading List</Link>
 
-          {/* Mobile GitHub Icon */}
-          <Link
-            href="https://github.com/jj-security"
+          {/* CTF Walkthroughs */}
+          <a
+            href="https://walkthroughs.justsecure.org"
             target="_blank"
-            className="block hover:text-primary flex items-center"
+            rel="noopener noreferrer"
+            className="block hover:text-primary"
           >
-            <Github className="w-5 h-5" />
-          </Link>
+            CTF Walkthroughs
+          </a>
         </div>
       )}
     </header>
