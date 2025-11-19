@@ -1,18 +1,34 @@
 "use client"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu } from "lucide-react"
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [isWalkthroughSite, setIsWalkthroughSite] = useState(false)
+
+  // Detect which domain we are on
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsWalkthroughSite(
+        window.location.hostname.includes("walkthroughs.")
+      )
+    }
+  }, [])
+
+  // If we are on walkthroughs.justsecure.org,
+  // anchor links should point to the main site instead.
+  const root = isWalkthroughSite
+    ? "https://justsecure.org"
+    : ""
 
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
 
-        {/* Logo / Name */}
+        {/* Logo */}
         <Link
-          href="/"
+          href={isWalkthroughSite ? "https://justsecure.org" : "/"}
           className="text-xl font-semibold text-primary hover:text-primary-light transition"
         >
           justsecure.org
@@ -20,21 +36,20 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 items-center text-foreground">
-          <Link href="/#about" className="hover:text-primary transition">About</Link>
-          <Link href="/#experience" className="hover:text-primary transition">Experience</Link>
-          <Link href="/#skills" className="hover:text-primary transition">Skills</Link>
-          <Link href="/#contact" className="hover:text-primary transition">Contact</Link>
-          <Link href="/reading_list" className="hover:text-primary transition">Reading List</Link>
+          
+          <Link href={`${root}/#about`} className="hover:text-primary transition">About</Link>
+          <Link href={`${root}/#experience`} className="hover:text-primary transition">Experience</Link>
+          <Link href={`${root}/#skills`} className="hover:text-primary transition">Skills</Link>
+          <Link href={`${root}/#contact`} className="hover:text-primary transition">Contact</Link>
+          <Link href={`${root}/reading_list`} className="hover:text-primary transition">Reading List</Link>
 
           {/* CTF Walkthroughs */}
-          <a
+          {/* <Link
             href="https://walkthroughs.justsecure.org"
-            target="_blank"
-            rel="noopener noreferrer"
             className="hover:text-primary transition"
           >
             CTF Walkthroughs
-          </a>
+          </Link> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -49,21 +64,18 @@ export default function Header() {
       {/* Mobile Menu Drawer */}
       {open && (
         <div className="md:hidden bg-background border-t border-border px-6 py-4 space-y-4">
-          <Link href="/#about" className="block hover:text-primary">About</Link>
-          <Link href="/#experience" className="block hover:text-primary">Experience</Link>
-          <Link href="/#skills" className="block hover:text-primary">Skills</Link>
-          <Link href="/#contact" className="block hover:text-primary">Contact</Link>
-          <Link href="/reading_list" className="block hover:text-primary">Reading List</Link>
+          <Link href={`${root}/#about`} className="block hover:text-primary">About</Link>
+          <Link href={`${root}/#experience`} className="block hover:text-primary">Experience</Link>
+          <Link href={`${root}/#skills`} className="block hover:text-primary">Skills</Link>
+          <Link href={`${root}/#contact`} className="block hover:text-primary">Contact</Link>
+          <Link href={`${root}/reading_list`} className="block hover:text-primary">Reading List</Link>
 
-          {/* CTF Walkthroughs */}
-          <a
+          {/* <Link
             href="https://walkthroughs.justsecure.org"
-            target="_blank"
-            rel="noopener noreferrer"
             className="block hover:text-primary"
           >
             CTF Walkthroughs
-          </a>
+          </Link> */}
         </div>
       )}
     </header>
