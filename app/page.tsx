@@ -26,7 +26,14 @@ export default function Home() {
               Turning security findings into action through vulnerability management, automation, and AI-assisted engineering.
             </p>
             <div className="hero-actions">
-              <a href="#experience" className="hero-primary-link">View experience</a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-primary-link"
+              >
+                View resume
+              </a>
               <a href="mailto:julian@justsecure.org" className="hero-secondary-link">Get in touch</a>
             </div>
           </div>
