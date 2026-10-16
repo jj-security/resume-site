@@ -10,46 +10,53 @@ export default function Home() {
         {/* ============================= */}
         <section
           id="hero"
-          className="min-h-[600px] flex items-center justify-center bg-gradient-to-b from-panel/40 to-background border-b border-border"
+          className="hero-section min-h-[560px] flex items-center bg-gradient-to-b from-panel/40 to-background border-b border-border"
         >
-          <div className="text-center max-w-4xl mx-auto px-6">
-            <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight mb-4 text-foreground">
+          <div className="hero-content max-w-6xl mx-auto px-6">
+            <p className="hero-kicker">Security · Automation · Engineering</p>
+            <h1 className="hero-name text-6xl md:text-7xl font-extrabold tracking-tight mb-4 text-foreground">
               <span className="text-primary">Julian Johnson</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted mb-6">
+            <p className="hero-role text-xl md:text-2xl text-muted mb-6">
               Security Analyst
             </p>
 
-            <p className="max-w-xl mx-auto text-muted leading-relaxed text-lg">
-              Professional security analyst with experience in vulnerability management, automation, remediation coordination, and hardening of hybrid cloud and on-premise environments.
+            <p className="hero-summary max-w-2xl text-muted leading-relaxed text-lg">
+              Turning security findings into action through vulnerability management, automation, and AI-assisted engineering.
             </p>
+            <div className="hero-actions">
+              <a href="#experience" className="hero-primary-link">View experience</a>
+              <a href="mailto:julian@justsecure.org" className="hero-secondary-link">Get in touch</a>
+            </div>
           </div>
         </section>
 
         {/* ============================= */}
         {/* ABOUT SECTION (modern cards)  */}
         {/* ============================= */}
-        <section id="about" className="py-24 bg-panel border-b border-border">
+        <section id="about" className="resume-section py-24 bg-panel border-b border-border">
           <div className="container mx-auto px-6 max-w-6xl">
 
-            <h2 className="text-4xl font-bold text-primary mb-14">About Me</h2>
+            <h2 className="section-title text-4xl font-bold text-primary mb-14">About Me</h2>
 
             {/* Modern 2×2 Grid */}
             <div className="grid md:grid-cols-2 gap-10">
 
               {/* Summary */}
-              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
-                <h3 className="text-primary font-semibold mb-4 text-xl">Summary</h3>
+              <div className="resume-card bg-background border border-border p-8 rounded-2xl shadow-md">
+                <h3 className="text-primary font-semibold mb-4 text-xl">Professional summary</h3>
                 <p className="text-muted leading-relaxed text-base">
-                  Cybersecurity analyst with experience in vulnerability management, 
-                  network security, automation, and scripting. Skilled in Qualys, Nessus, 
-                  Python, Bash, remediation coordination, and secure infrastructure practices.
+                  Cybersecurity analyst with experience spanning vulnerability management,
+                  network defense, systems administration, and security operations. Builds
+                  practical automations and AI-assisted software using Python, PowerShell,
+                  Power Apps, and Copilot, connecting technical findings with remediation,
+                  compliance, and operational needs across enterprise environments.
                 </p>
               </div>
 
               {/* Contact */}
-              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="resume-card bg-background border border-border p-8 rounded-2xl shadow-md">
                 <h3 className="text-primary font-semibold mb-4 text-xl">Contact</h3>
                 <ul className="space-y-3 text-muted text-base">
                   <li>
@@ -79,7 +86,7 @@ export default function Home() {
               </div>
 
               {/* Certifications */}
-              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="resume-card bg-background border border-border p-8 rounded-2xl shadow-md">
                 <h3 className="text-primary font-semibold mb-4 text-xl">Certifications</h3>
                 <ul className="list-disc list-inside space-y-3 text-muted text-base">
                   <li>GIAC Certified Enterprise Defender (GCED)</li>
@@ -89,7 +96,7 @@ export default function Home() {
               </div>
 
               {/* Education */}
-              <div className="bg-background border border-border p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="resume-card bg-background border border-border p-8 rounded-2xl shadow-md">
                 <h3 className="text-primary font-semibold mb-4 text-xl">Education</h3>
                 <ul className="list-disc list-inside space-y-3 text-muted text-base">
                   <li>B.S. Software Development — Western Governors University</li>
@@ -105,16 +112,16 @@ export default function Home() {
         {/* ============================= */}
         {/* EXPERIENCE SECTION            */}
         {/* ============================= */}
-        <section id="experience" className="py-20 bg-background border-b border-border">
+        <section id="experience" className="resume-section py-20 bg-background border-b border-border">
           <div className="container mx-auto px-6 max-w-5xl">
             
-            <h2 className="text-3xl font-bold text-primary mb-10">Experience</h2>
+            <h2 className="section-title text-3xl font-bold text-primary mb-10">Experience</h2>
 
             <div className="space-y-8">
               {/* Job 1 */}
 
-              <div className="bg-panel border border-border p-6 rounded-lg">
-                <div className="flex justify-between mb-3">
+              <div className="experience-entry bg-panel border border-border p-6 rounded-lg">
+                <div className="experience-heading flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Security Analyst III
                   </h3>
@@ -138,8 +145,8 @@ export default function Home() {
 
               {/* Job 2 */}
 
-              <div className="bg-panel border border-border p-6 rounded-lg">
-                <div className="flex justify-between mb-3">
+              <div className="experience-entry bg-panel border border-border p-6 rounded-lg">
+                <div className="experience-heading flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Application Engineer
                   </h3>
@@ -155,8 +162,8 @@ export default function Home() {
 
               {/* Job 3 */}
 
-              <div className="bg-panel border border-border p-6 rounded-lg">
-                <div className="flex justify-between mb-3">
+              <div className="experience-entry bg-panel border border-border p-6 rounded-lg">
+                <div className="experience-heading flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Supervisor, Weapons and Tactics
                   </h3>
@@ -174,8 +181,8 @@ export default function Home() {
 
               {/* Job 4 */}
 
-              <div className="bg-panel border border-border p-6 rounded-lg">
-                <div className="flex justify-between mb-3">
+              <div className="experience-entry bg-panel border border-border p-6 rounded-lg">
+                <div className="experience-heading flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Endpoint Protection Specialist
                   </h3>
@@ -191,8 +198,8 @@ export default function Home() {
 
               {/* Job 5 */}
 
-              <div className="bg-panel border border-border p-6 rounded-lg">
-                <div className="flex justify-between mb-3">
+              <div className="experience-entry bg-panel border border-border p-6 rounded-lg">
+                <div className="experience-heading flex justify-between mb-3">
                   <h3 className="text-xl font-semibold text-foreground">
                     Systems Administrator/Vulnerability Management Technician
                   </h3>
@@ -218,27 +225,28 @@ export default function Home() {
         {/* ============================= */}
         {/* SKILLS SECTION                */}
         {/* ============================= */}
-        <section id="skills" className="py-24 bg-panel border-b border-border">
+        <section id="skills" className="resume-section py-24 bg-panel border-b border-border">
           <div className="container mx-auto px-6 max-w-6xl">
 
-            <h2 className="text-4xl font-bold text-primary mb-14">Skills</h2>
+            <h2 className="section-title text-4xl font-bold text-primary mb-14">Skills</h2>
 
             <div className="grid md:grid-cols-3 gap-8">
 
-              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
+              <div className="resume-card skill-card bg-background border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-primary mb-3 font-semibold">Security Tools + Languages</h3>
                 <ul className="text-muted space-y-2 text-sm">
                   <li>• Qualys, Nessus, Retina</li>
-                  <li>• Wiz, Dazz, Nucleus</li>
+                  <li>• Wiz, Dazz, Nucleus, Seemplicity</li>
                   <li>• SIEM/Log Analysis (Splunk, Exabeam)</li>
                   <li>• Trellix ePolicy Orchestrator (f.k.a. McAfee)</li>
                   <li>• CommVault, ADIC Scalar</li>
                   <li>• Python, Bash, PowerShell</li>
-                  <li>• Copilot, OpenAI</li>
+                  <li>• GitHub Copilot, OpenAI</li>
+                  <li>• Power Apps, Power Automate</li>
                 </ul>
               </div>
 
-              <div className="bg-background border border-border p-6 rounded-2xl shadow-sm">
+              <div className="resume-card skill-card bg-background border border-border p-6 rounded-2xl shadow-sm">
                 <h3 className="text-primary mb-3 font-semibold">Infrastructure</h3>
                 <ul className="text-muted space-y-2 text-sm">
                   <li>• Linux (Ubuntu, RHEL, Kali)</li>
@@ -286,12 +294,12 @@ export default function Home() {
         {/* ============================= */}
         {/* CONTACT SECTION               */}
         {/* ============================= */}
-        <section id="contact" className="py-24 bg-panel">
+        <section id="contact" className="resume-section contact-section py-24 bg-panel">
           <div className="container mx-auto px-6 max-w-4xl text-center">
 
-            <h2 className="text-4xl font-bold text-primary mb-10">Contact</h2>
+            <h2 className="section-title text-4xl font-bold text-primary mb-10">Contact</h2>
 
-            <div className="bg-background border border-border p-10 rounded-2xl shadow-sm max-w-xl mx-auto">
+            <div className="resume-card contact-card bg-background border border-border p-10 rounded-2xl shadow-sm max-w-xl mx-auto">
               <p className="text-muted mb-6">
                 Always open to opportunities or collaboration. Feel free to reach out.
               </p>
