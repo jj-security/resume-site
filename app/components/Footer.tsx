@@ -2,8 +2,8 @@ import { Github } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-background border-t border-border mt-20 py-6">
-      <div className="container mx-auto px-6 text-center text-muted text-sm flex flex-col items-center gap-3">
+    <footer className="site-footer bg-background border-t border-border mt-20 py-6">
+      <div className="site-footer-inner container mx-auto px-6 text-center text-muted text-sm flex flex-col items-center gap-3">
 
 
         {/* GitHub Icon with hover tooltip */}
