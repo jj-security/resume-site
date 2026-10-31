@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from './components/Header'
 
-export const metadata = {
-  title: "Julian Johnson - Security Analyst",
+export const metadata: Metadata = {
+  title: "whoisjj.dev | Julian Johnson",
   description: "Security Analyst Resume",
   icons: {
     icon: [
@@ -35,4 +35,3 @@ export default function RootLayout({
     </html>
   )
 }
-
